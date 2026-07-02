@@ -365,6 +365,27 @@ body::before {
 /* ---------- results ---------- */
 .results { padding: 20px 0 100px; animation: rise 0.7s var(--ease); }
 
+.uploaded-drawing {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+  opacity: 0;
+  animation: rise 0.7s var(--ease) forwards;
+}
+.uploaded-drawing img {
+  max-width: 260px;
+  max-height: 260px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  background: #fff;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1.5px solid var(--line);
+  box-shadow: 0 20px 40px -24px var(--shadow);
+  transform: rotate(-2deg);
+}
+
 .reading {
   background: var(--card);
   border: 1.5px solid var(--line);
@@ -587,6 +608,8 @@ footer {
   .go { padding: 16px 22px; font-size: 1.1rem; }
 
   .results { padding: 12px 0 80px; }
+  .uploaded-drawing { margin-bottom: 20px; }
+  .uploaded-drawing img { max-width: 180px; max-height: 180px; }
   .reading { padding: 24px 20px; border-radius: 20px; margin-bottom: 34px; }
   .reading h2 { font-size: 1.4rem; }
   .reading .obs { font-size: 1rem; }

@@ -295,6 +295,11 @@ export default function App() {
       {analysis && (
         <div className="wrap">
           <section className="results" ref={resultRef}>
+            {image && (
+              <div className="uploaded-drawing">
+                <img src={image.url} alt="업로드한 그림" />
+              </div>
+            )}
             <div className="reading">
               <div className="badge">그림이 들려준 이야기</div>
               <h2>{analysis.parent_message}</h2>
